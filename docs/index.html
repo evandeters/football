@@ -24,7 +24,8 @@
         <div id="aSide">
             <!-- 3D objsect -->
             <!-- This inserts the 3D object inside the aside container -->
-            <model-viewer shadow-intensity="1" shadow-softness="0" skybox-image="assets/studio.hdr" src="assets/naka.glb" alt="Nakamura" camera-controls auto-rotate ios-src="assets/naka.glb" seamless-poster shadow-intensity="2"></model-viewer>
+            <model-viewer shadow-intensity="1" shadow-softness="0" skybox-image="assets/studio.hdr" src="assets/naka.glb" alt="Nakamura" autorotate ios-src="assets/naka.glb" seamless-poster shadow-intensity="2">
+            </model-viewer>
         </div>
         
         <!-- Bootstrap core JS-->
@@ -32,19 +33,5 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
-
-    <script>
-(() => {
-  const modelViewer = document.querySelector('#shadow-intensity-demo');
-  const time = performance.now();
-
-  const animate = (now) => {
-    modelViewer.shadowIntensity = oscillate(0, 2, 4000, now - time);
-    requestAnimationFrame(animate);
-  };
-
-  animate();
-})();
-</script>
 
 </html>
