@@ -88,6 +88,10 @@
   border: none;
 }
 
+model-viewer#reveal {
+  --poster-color: transparent;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -254,11 +258,11 @@ sup {
 }
 
 a {
-  color: #2a5555;
+  color: #969696;
   text-decoration: underline;
 }
 a:hover {
-  color: #224444;
+  color: #00ffff;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -2518,10 +2522,7 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(42, 85, 85, 0.25);
 }
-.form-check-input:checked {
-  background-color: #2a5555;
-  border-color: #2a5555;
-}
+
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
 }
@@ -11308,7 +11309,6 @@ body:before {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #2a5555;
   opacity: 0.7;
   z-index: 1;
 }
