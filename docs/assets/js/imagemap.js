@@ -10,7 +10,7 @@ window.onload = function () {
             }
             this.resize = function () {
                 var n, m, clen,
-                    x = document.body.clientWidth / previousWidth;
+                    x = document.getElementById("imageMapDiv").offsetWidth / previousWidth;
                 for (n = 0; n < len; n++) {
                     clen = coords[n].length;
                     for (m = 0; m < clen; m++) {
@@ -18,7 +18,7 @@ window.onload = function () {
                     }
                     areas[n].coords = coords[n].join(',');
                 }
-                previousWidth = document.body.clientWidth;
+                previousWidth = document.getElementById("imageMapDiv").offsetWidth;
                 return true;
             };
             window.onresize = this.resize;

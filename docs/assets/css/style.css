@@ -1,0 +1,15 @@
+.headerDiv {
+    background-color: #262525;
+    text-align: center;
+}
+
+.bodyClass {
+    background-color: #262525;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
