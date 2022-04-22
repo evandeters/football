@@ -2,28 +2,11 @@
 <html>
   
 <head>   
-    <style>
-        img {
-            width: auto;
-            height: auto;
-            border: 1px red solid;
-        }
-          
-        h1 {
-            color: Green;
-        }
-          
-        body {
-            background: white;
-            margin-top: 4%;
-            margin-left: 10%;
-        }
-    </style>
 </head>
   
 <body>
     <div style="width:100%;">
-    <img srcset="./NakamuraKamon.png 2x" usemap="#map" border="0" width="100%" alt="" />
+    <img srcset="./NakamuraKamon.png" usemap="#map" border="0" width="100%" alt="" />
     </div>
     <map id="map_ID" name="map">
         <area alt="aboutme" title="aboutme" href="aboutme" coords="1198,483,405" shape="circle">
@@ -42,7 +25,7 @@
                 areas = map.getElementsByTagName('area'),
                 len = areas.length,
                 coords = [],
-                previousWidth = 1200;
+                previousWidth = 2400;
             for (n = 0; n < len; n++) {
                 coords[n] = areas[n].coords.split(',');
             }
