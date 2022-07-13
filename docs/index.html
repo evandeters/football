@@ -9,15 +9,12 @@
     <meta name="Evan Deters" content="evandeters">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<div class="headerDiv">
-    evan deters
-</div>
 
 <body class="bodyClass">
     <div class="wrapper">
         <div id="imageMapDiv" class="centered">
             <img srcset=".\assets\images\naka.gif 2x" width="100%" usemap="#map" border="0" alt=""/>
-            <div class="circle1" width="100%"></div>
+            <div class="circle1" width="100%" data-location="https://youtube.com"></div>
             <div class="circle2" width="100%"></div>
             <div class="circle3" width="100%"></div>
             <div class="circle4" width="100%"></div>
@@ -25,6 +22,9 @@
             <div class="circle6" width="100%"></div>
         </div>
     </div>
+
+</body>
+  
 <map id="map_ID" name="map">
     <area alt="aboutme" title="aboutme" href="aboutme" coords="1198,483,405" shape="circle">
     <area alt="" title="" href="https://youtube.com" coords="782,1779,404" shape="circle">
@@ -34,7 +34,8 @@
     <area alt="" title="" href="https://youtube.com" coords="1629,1779,405" shape="circle">
     <area alt="" title="" href="https://youtube.com" coords="1199,1201,255" shape="circle">
 </map>
-</body>
-  
+
 <script src=".\assets\js\imagemap.js" defer></script>
+
+<script> window.location = $(".circle1").data("location"); </script>
 </html>

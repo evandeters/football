@@ -38,7 +38,6 @@ img {
     transform: scale(1.3); 
     transform-origin: 217% 217%;
     background-color: #262525;
-
 }
 
 .circle2 {
@@ -57,7 +56,6 @@ img {
 .circle2:hover {
     transform: scale(1.3); 
     transform-origin: 217% 217%;
-    background-image: url("../images/naka.gif");
     background-color: #262525;
 }
 
