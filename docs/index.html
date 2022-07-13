@@ -1,34 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Evan Deters</title>
-    <meta name="description" content="Evan - Coming Soon">
-    <meta name="Evan Deters" content="evandeters">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+<html>
 
-<body class="bodyClass">
-    <div class="wrapper">
-        <div id="imageMapDiv" class="centered">
-            <img srcset=".\assets\images\naka.gif 2x" width="100%" usemap="#map" border="0" alt=""/>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan Deters</title>
+    <link rel="icon" href="./assets/img/NakamuraKamon.png" type="image/x-icon" />
+    <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
+    <script src="./assets/js/polyfills.js"></script>
+    <script src="./assets/js/main.js"></script> </head>
+
+<body>
+    <div id="sidenav">
+        <button id="sidenavBtn">&#9776;</button>
+        <img id="profilePic" alt="An avatar that aims to represent the website owner" src="./assets/images/NakamuraKamon.png">
+    </div>
+    <div id="container">
+        <div id="output"></div>
+        <div id="input-line" class="input-line">
+            <div id="prompt" class="prompt-color"></div>&nbsp;
+            <div>
+                <input type="text" id="cmdline" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+                    autofocus/>
+            </div>
         </div>
     </div>
-
 </body>
-  
-<map id="map_ID" name="map">
-    <area alt="aboutme" title="aboutme" href="./pages/aboutme.html" coords="1198,483,405" shape="circle">
-    <area alt="" title="" href="" coords="782,1779,404" shape="circle">
-    <area alt="" title="" href="https://github.com/evanjd711" coords="1882,983,405" shape="circle">
-    <area alt="" title="" href="" coords="513,983,407" shape="circle">
-    <area alt="" title="" href="https://www.linkedin.com/in/evan-deters/" coords="1629,1779,405" shape="circle">
-    <area alt="" title="" href="https://youtube.com" coords="1199,1201,255" shape="circle">
-</map>
 
-<script src=".\assets\js\imagemap.js" defer></script>
-
-<script> window.location = $(".circle1").data("location"); </script>
 </html>
