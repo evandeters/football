@@ -12,20 +12,20 @@ var configs = (function () {
         }
     };
     Singleton.defaultOptions = {
-        general_help: "Below there's a list of commands that you can use.\nYou can use autofill by pressing the TAB key, autocompleting if there's only 1 possibility, or showing you a list of possibilities.",
-        ls_help: "List information about the files and folders (the current directory by default).",
-        cat_help: "Read FILE(s) content and print it to the standard output (screen).",
-        whoami_help: "Print the user name associated with the current effective user ID and more info.",
-        date_help: "Print the system date and time.",
-        help_help: "Print this menu.",
-        clear_help: "Clear the terminal screen.",
-        reboot_help: "Reboot the system.",
-        cd_help: "Change the current working directory.",
-        mv_help: "Move (rename) files.",
-        rm_help: "Remove files or directories.",
-        rmdir_help: "Remove directory, this command will only work if the folders are empty.",
-        touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
-        sudo_help: "Execute a command as the superuser.",
+        general_gethelp: "Below there's a list of commands that you can use.\nYou can use autofill by pressing the TAB key, autocompleting if there's only 1 possibility, or showing you a list of possibilities.",
+        ls_gethelp: "List information about the files and folders (the current directory by default).",
+        cat_gethelp: "Read FILE(s) content and print it to the standard output (screen).",
+        whoami_gethelp: "Print the user name associated with the current effective user ID and more info.",
+        date_gethelp: "Print the system date and time.",
+        gethelp_gethelp: "Print this menu.",
+        clear_gethelp: "Clear the terminal screen.",
+        reboot_gethelp: "Reboot the system.",
+        cd_gethelp: "Change the current working directory.",
+        mv_gethelp: "Move (rename) files.",
+        rm_gethelp: "Remove files or directories.",
+        rmdir_gethelp: "Remove directory, this command will only work if the folders are empty.",
+        touch_gethelp: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
+        sudo_gethelp: "Execute a command as the superuser.",
         welcome: `Evan's PowerShell Terminal
         Copyright (C) evandeters.com
         \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0.^!?YPGB#&&@@@@@@@@&&#BGPY?!^.\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0
@@ -167,19 +167,19 @@ var main = (function () {
     InvalidArgumentException.prototype.constructor = InvalidArgumentException;
 
     var cmds = {
-        LS: { value: "ls", help: configs.getInstance().ls_help },
-        CAT: { value: "cat", help: configs.getInstance().cat_help },
-        WHOAMI: { value: "whoami", help: configs.getInstance().whoami_help },
-        DATE: { value: "date", help: configs.getInstance().date_help },
-        HELP: { value: "help", help: configs.getInstance().help_help },
-        CLEAR: { value: "clear", help: configs.getInstance().clear_help },
-        REBOOT: { value: "reboot", help: configs.getInstance().reboot_help },
-        CD: { value: "cd", help: configs.getInstance().cd_help },
-        MV: { value: "mv", help: configs.getInstance().mv_help },
-        RM: { value: "rm", help: configs.getInstance().rm_help },
-        RMDIR: { value: "rmdir", help: configs.getInstance().rmdir_help },
-        TOUCH: { value: "touch", help: configs.getInstance().touch_help },
-        SUDO: { value: "sudo", help: configs.getInstance().sudo_help }
+        LS: { value: "ls", gethelp: configs.getInstance().ls_gethelp },
+        CAT: { value: "cat", gethelp: configs.getInstance().cat_gethelp },
+        WHOAMI: { value: "whoami", gethelp: configs.getInstance().whoami_gethelp },
+        DATE: { value: "date", gethelp: configs.getInstance().date_gethelp },
+        GETHELP: { value: "get-help", gethelp: configs.getInstance().gethelp_gethelp },
+        CLEAR: { value: "clear", gethelp: configs.getInstance().clear_gethelp },
+        REBOOT: { value: "reboot", gethelp: configs.getInstance().reboot_gethelp },
+        CD: { value: "cd", gethelp: configs.getInstance().cd_gethelp },
+        MV: { value: "mv", gethelp: configs.getInstance().mv_gethelp },
+        RM: { value: "rm", gethelp: configs.getInstance().rm_gethelp },
+        RMDIR: { value: "rmdir", gethelp: configs.getInstance().rmdir_gethelp },
+        TOUCH: { value: "touch", gethelp: configs.getInstance().touch_gethelp },
+        SUDO: { value: "sudo", gethelp: configs.getInstance().sudo_gethelp }
     };
 
     var Terminal = function (prompt, cmdLine, output, sidenav, profilePic, user, host, root, outputTimer) {
@@ -370,8 +370,8 @@ var main = (function () {
             case cmds.DATE.value:
                 this.date();
                 break;
-            case cmds.HELP.value:
-                this.help();
+            case cmds.GETHELP.value:
+                this.gethelp();
                 break;
             case cmds.CLEAR.value:
                 this.clear();
@@ -428,10 +428,10 @@ var main = (function () {
         this.type(new Date().toString(), this.unlock.bind(this));
     };
 
-    Terminal.prototype.help = function () {
-        var result = configs.getInstance().general_help + "\n\n";
+    Terminal.prototype.gethelp = function () {
+        var result = configs.getInstance().general_gethelp + "\n\n";
         for (var cmd in cmds) {
-            result += cmds[cmd].value + " - " + cmds[cmd].help + "\n";
+            result += cmds[cmd].value + " - " + cmds[cmd].gethelp + "\n";
         }
         this.type(result.trim(), this.unlock.bind(this));
     };
