@@ -119,7 +119,8 @@ var files = (function () {
         "Contact.txt": "evan@evandeters.com",
         "Github.lnk": "https://github.com/evanjd711",
         "LinkedIn.lnk": "https://www.linkedin.com/in/evan-deters/",
-        "Swift.lnk": "https://www.calpolyswift.org"
+        "Swift.lnk": "https://www.calpolyswift.org",
+        "CPPcyber.lnk": "https://cysec.team"
     };
     return {
         getInstance: function (options) {
