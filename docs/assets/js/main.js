@@ -75,7 +75,7 @@ var files = (function () {
         "Andy_Rob_Kevin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         "Kevin_Jason_Devin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         "Roger_Lawrence_Mike": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Andy_Jason_Mike": "You have now mastered the command line, you’re essentially on the same skill level as Santa Jr himself! Your next letter from Santa Jr can be found in a location that is stocked up for all your hydration needs in case of a national disaster. Except maybe not a flood, it’d be pretty unhelpful for a flood. Maybe even redundant for a flood.",
+        "Andy_Jason_Mike": "You have now mastered the command line, you’re essentially on the same skill level as Santa Jr. himself! Your next letter from Santa Jr. can be found in a location that is stocked up for all your hydration needs in case of a national disaster. Except maybe not a flood, it’d be pretty unhelpful for a flood. Maybe even redundant for a flood.",
         "Devin_Kevin_Andy": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         "Kevin_Jason_Steven": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         "Steven_Andy_Mike": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
