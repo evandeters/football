@@ -69,22 +69,22 @@ var files = (function () {
         }
     };
     Singleton.defaultOptions = {
-        "Andy, Steven, Richard": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Richard, Mike, Rob": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Jason, Steven, Rob": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Andy, Rob, Kevin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Kevin, Jason, Devin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Roger, Lawrence, Mike": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Andy, Jason, Mike": "",
-        "Devin, Kevin, Andy": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Kevin, Jason, Steven": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Steven, Andy, Mike": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Lawrence, Devin, Steven": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Richard, Rob, Devin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Devin, Steven, Kevin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Kevin, Rob, Allen": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Allen, Lawrence, Robert": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "Steven, Jason, Andy": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        "Andy_Steven_Richard": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Richard_Mike_Rob": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Jason_Steven_Rob": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Andy_Rob_Kevin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Kevin_Jason_Devin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Roger_Lawrence_Mike": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Andy_Jason_Mike": "",
+        "Devin_Kevin_Andy": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Kevin_Jason_Steven": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Steven_Andy_Mike": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Lawrence_Devin_Steven": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Richard_Rob_Devin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Devin_Steven_Kevin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Kevin_Rob_Allen": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Allen_Lawrence_Robert": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Steven_Jason_Andy": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         
     };
     return {
